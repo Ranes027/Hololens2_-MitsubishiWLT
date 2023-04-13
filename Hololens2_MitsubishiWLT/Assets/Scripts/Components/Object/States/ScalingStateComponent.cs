@@ -4,6 +4,7 @@ using UnityEngine;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
 using MitsubishiAR.Components.Scene;
+using static MitsubishiAR.Components.Object.States.BoxColliderStateComponent;
 
 namespace MitsubishiAR.Components.Object.States
 {
@@ -18,7 +19,11 @@ namespace MitsubishiAR.Components.Object.States
             {
                 SwitchBoundsControlState(_objects[i]);
                 SwitchObjectManipulatorState(_objects[i]);
-                SwitchBoxColliderState(_objects[i]);
+
+                if (SceneConstants.Instance.SceneInfo.BoundsOverrides == false && _needToSwitchBoxState)
+                {
+                    SwitchBoxColliderState(_objects[i]);
+                }
             }
         }
 
@@ -42,17 +47,6 @@ namespace MitsubishiAR.Components.Object.States
             var manipulator = gameObject.GetComponent<ObjectManipulator>();
 
             manipulator.enabled = !manipulator.enabled;
-        }
-
-        private void SwitchBoxColliderState(GameObject gameObject)
-        {
-
-            if (SceneConstants.Instance.SceneInfo.BoundsOverrides == false && _needToSwitchBoxState)
-            {
-                var box = gameObject.GetComponent<BoxCollider>();
-
-                box.enabled = !box.enabled;
-            }
         }
     }
 }
