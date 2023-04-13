@@ -5,12 +5,15 @@ using UnityEngine;
 namespace MitsubishiAR.Components.Object.States
 {
     public class ActiveStateComponent : MonoBehaviour
-    {   
+    {
         [SerializeField] private GameObject[] _objects;
 
         public void Active()
         {
-            ChangeState(_objects);
+            if (_objects != null)
+                ChangeState(_objects);
+            else
+                Debug.Log("Add objects to ActiveStateComponent");
         }
 
         public static void ChangeState(GameObject[] objects)
