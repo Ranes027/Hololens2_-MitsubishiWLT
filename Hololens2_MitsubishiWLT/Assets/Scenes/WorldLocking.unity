@@ -8185,7 +8185,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1582345702
 GameObject:
@@ -9610,7 +9610,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1756763943
 GameObject:
@@ -13294,7 +13294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2317170037493834136, guid: 071f3fba46a0a4840b0e8a44fb198c54, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2317170037493834136, guid: 071f3fba46a0a4840b0e8a44fb198c54, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16941,7 +16941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1440618273047282153, guid: 95d86d0e53c7a854482de3e8336b6655, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1627450092645917032, guid: 95d86d0e53c7a854482de3e8336b6655, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -17564,7 +17564,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4478825230710362090
 Transform:
   m_ObjectHideFlags: 0
@@ -18456,7 +18456,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2501338860373115183, guid: 60ee2d4ecc4607f44a95941ce498a976, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2501338860373115183, guid: 60ee2d4ecc4607f44a95941ce498a976, type: 3}
       propertyPath: m_LocalPosition.x
