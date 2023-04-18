@@ -10,7 +10,7 @@ namespace MitsubishiAR.Components.Object
         [SerializeField] private float _yAngleLimit = 180f;
         [SerializeField] private float _zAngleLimit = 180f;
 
-        void Start()
+        public void Start()
         {
             _slider.onValueChanged.AddListener(delegate
             {
@@ -18,7 +18,7 @@ namespace MitsubishiAR.Components.Object
             });
         }
 
-        public void RotateMe()
+        private void RotateMe()
         {
             transform.localEulerAngles = new Vector3(_slider.value * _xAngleLimit, _slider.value * _yAngleLimit, _slider.value * _zAngleLimit);
         }
