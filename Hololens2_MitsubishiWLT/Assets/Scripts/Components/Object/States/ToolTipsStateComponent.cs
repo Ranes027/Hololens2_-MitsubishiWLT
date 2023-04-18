@@ -20,8 +20,10 @@ namespace MitsubishiAR.Components.Object.States
         private void EnableToolTip(GameObject gameObject)
         {
             var toolTip = gameObject.GetComponent<ToolTipSpawner>();
-
-            toolTip.enabled = !toolTip.enabled;
+            if (toolTip != null)
+            {
+                toolTip.enabled = !toolTip.enabled;
+            }
         }
     }
 }
