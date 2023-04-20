@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -5, y: -0.000061035156}
-  m_SizeDelta: {x: -50, y: 0}
+  m_SizeDelta: {x: -50, y: 73.95}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &6686469791642936359
 CanvasRenderer:
@@ -4433,13 +4433,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2406182595746169460}
+  - component: {fileID: 3232165352198316140}
   - component: {fileID: 1440618273047282150}
   - component: {fileID: 6496656087241536961}
   - component: {fileID: 8883763435739917639}
   - component: {fileID: 8916613747974246876}
   - component: {fileID: 8564896097373161252}
   m_Layer: 0
-  m_Name: AdminMenu [WLTScene]
+  m_Name: AdminMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4466,6 +4467,119 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3232165352198316140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440618273047282153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eb8c15329e56ad42bf6bbe492d46565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _menu: {fileID: 1440618273047282153}
+  _showObjects:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4417617532851768107}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.States.ShowObjectsComponent,
+          Assembly-CSharp
+        m_MethodName: Show
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4417617532851768106}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.States.HideObjectsComponent,
+          Assembly-CSharp
+        m_MethodName: Hide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1093368010236196788}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.States.MeshRendererStateComponent,
+          Assembly-CSharp
+        m_MethodName: Active
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _hideObjects:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4417617534087869944}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.States.ShowObjectsComponent,
+          Assembly-CSharp
+        m_MethodName: Show
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4417617534087869947}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.States.HideObjectsComponent,
+          Assembly-CSharp
+        m_MethodName: Hide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3669693346031849616}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.States.MeshRendererStateComponent,
+          Assembly-CSharp
+        m_MethodName: Active
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _boundsState:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4417617533251813840}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.States.ScalingStateComponent,
+          Assembly-CSharp
+        m_MethodName: ChangeScalingState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!95 &1440618273047282150
 Animator:
   serializedVersion: 3
@@ -10613,6 +10727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _objects:
   - {fileID: 9060366258638756596}
+  - {fileID: 0}
 --- !u!1 &4417617532579055820
 GameObject:
   m_ObjectHideFlags: 0
@@ -10983,7 +11098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4417617532637432032}
   m_Layer: 0
-  m_Name: Actions (OnClick)
+  m_Name: Actions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15935,7 +16050,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4417617533201489837}
   - component: {fileID: 4417617533201489832}
-  - component: {fileID: 4417617533201489835}
   - component: {fileID: 4417617533201489834}
   m_Layer: 0
   m_Name: TextMeshPro
@@ -16004,14 +16118,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!222 &4417617533201489835
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4417617533201489836}
-  m_CullTransparentMesh: 0
 --- !u!114 &4417617533201489834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16910,7 +17016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4417617533324185033
 Transform:
   m_ObjectHideFlags: 0
@@ -31373,7 +31479,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -31447,10 +31553,10 @@ RectTransform:
   m_Father: {fileID: 7878435221032620959}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 389.90793, y: -36.975}
+  m_SizeDelta: {x: 769.81586, y: 63.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7121538001227558002
 CanvasRenderer:
