@@ -34,7 +34,8 @@ namespace MitsubishiAR.Components.Object.States
             if (bounds == null)
             {
                 var boundBox = gameObject.GetComponent<BoundingBox>();
-                boundBox.enabled = !boundBox.enabled;
+                if (boundBox != null)
+                    boundBox.enabled = !boundBox.enabled;
             }
             else
             {
@@ -45,8 +46,8 @@ namespace MitsubishiAR.Components.Object.States
         private void SwitchObjectManipulatorState(GameObject gameObject)
         {
             var manipulator = gameObject.GetComponent<ObjectManipulator>();
-
-            manipulator.enabled = !manipulator.enabled;
+            if (manipulator != null)
+                manipulator.enabled = !manipulator.enabled;
         }
     }
 }
