@@ -23,13 +23,12 @@ namespace MitsubishiAR.UI
                 {
                     case "Info":
                         sceneContent.SceneSM.ChangeState(sceneContent.Info);
-                        Debug.Log("Scene changed to Info");
                         break;
                     case "StandTurnOn":
-                        sceneContent.SceneSM.ChangeState(sceneContent.StandTurnOn);
+                        sceneContent.SceneSM.ChangeState(sceneContent.StandInstruction);
                         break;
                     case "ControllerCheckUp":
-                        sceneContent.SceneSM.ChangeState(sceneContent.StandTurnOn);
+                        sceneContent.SceneSM.ChangeState(sceneContent.ControllerCheckUp);
                         break;
                     default:
                         break;
