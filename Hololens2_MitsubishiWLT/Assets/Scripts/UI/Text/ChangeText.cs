@@ -5,14 +5,15 @@ using UnityEngine;
 
 namespace MitsubishiAR.UI.ChangeText
 {
+    [RequireComponent(typeof(TextMeshProUGUI))]
     public class ChangeText : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI _targetText;
-        [SerializeField] private string _text;
+        [SerializeField] private TextMeshProUGUI _oldText;
+        [SerializeField] private TextMeshProUGUI _newText;
 
         public void Change()
         {
-            _targetText.text = _text;
+            _oldText.text = _newText.text;
         }
     }
 
