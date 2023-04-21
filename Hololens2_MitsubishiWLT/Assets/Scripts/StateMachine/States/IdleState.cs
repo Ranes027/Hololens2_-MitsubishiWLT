@@ -15,8 +15,7 @@ namespace MitsubishiAR.StateMachine
 
         public override void Enter()
         {
-            base.Enter();
-            sceneContent.AdminMenu.HideSceneObjects(); // временно для проверки в editor
+            base.Enter();            
             sceneContent.MainMenu.ActiveMenu();            
             sceneContent.HandMenu.MainMenuMode();
         }
