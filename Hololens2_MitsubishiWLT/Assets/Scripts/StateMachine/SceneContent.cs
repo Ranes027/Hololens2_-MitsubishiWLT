@@ -20,7 +20,7 @@ namespace MitsubishiAR.StateMachine
         public IdleState Idle;
         public AdminState Admin;
         public InfoState Info;
-        public StandTurnOnState StandTurnOn;
+        public StandInstructionState StandInstruction;
         public ControllerCheckUpState ControllerCheckUp;
 
         public MainMenu MainMenu => _mainMenu;
@@ -38,7 +38,7 @@ namespace MitsubishiAR.StateMachine
             Idle = new IdleState(this, SceneSM);
             Admin = new AdminState(this, SceneSM);
             Info = new InfoState(this, SceneSM);
-            StandTurnOn = new StandTurnOnState(this, SceneSM);
+            StandInstruction = new StandInstructionState(this, SceneSM);
             ControllerCheckUp = new ControllerCheckUpState(this, SceneSM);
 
             SceneSM.Initialize(Idle);
