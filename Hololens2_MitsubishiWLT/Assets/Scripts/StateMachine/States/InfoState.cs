@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static MitsubishiAR.Components.Object.States.ActiveStateComponent;
+using static MitsubishiAR.Components.Object.States.ShowObjectsComponent;
+using static MitsubishiAR.Components.Object.States.HideObjectsComponent;
 
 namespace MitsubishiAR.StateMachine
 {
@@ -14,7 +15,7 @@ namespace MitsubishiAR.StateMachine
         public override void Enter()
         {
             base.Enter();
-            ChangeState(sceneContent.Tips);
+            ShowObjects(sceneContent.Tips);
         }
 
         public override void LogicUpdate()
@@ -31,7 +32,7 @@ namespace MitsubishiAR.StateMachine
         public override void Exit()
         {
             base.Exit();
-            ChangeState(sceneContent.Tips);
+            HideObjects(sceneContent.Tips);
         }
     }
 

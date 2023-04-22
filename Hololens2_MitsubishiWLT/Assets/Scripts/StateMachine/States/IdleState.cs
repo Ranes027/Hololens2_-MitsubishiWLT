@@ -15,9 +15,11 @@ namespace MitsubishiAR.StateMachine
 
         public override void Enter()
         {
-            base.Enter();            
-            sceneContent.MainMenu.ActiveMenu();            
-            sceneContent.HandMenu.MainMenuMode();
+            base.Enter();
+            sceneContent.UpdateSceneAnimator(sceneContent.SceneContentAnimator);        
+            sceneContent.MainMenu.ActiveMenu();
+            sceneContent.HandMenu.ActiveMenu();       
+            sceneContent.HandMenu.MainMenuMode();            
         }
 
         public override void LogicUpdate()
