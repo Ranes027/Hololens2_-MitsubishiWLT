@@ -10,9 +10,14 @@ namespace MitsubishiAR.Components.Object.States
 
         public void Show()
         {
-            for (int i = 0; i < _objects.Length; i++)
+            ShowObjects(_objects);
+        }
+
+        public static void ShowObjects(GameObject[] objects)
+        {
+            for (int i = 0; i < objects.Length; i++)
             {
-                _objects[i].SetActive(true);
+                objects[i].SetActive(true);
             }
         }
     }

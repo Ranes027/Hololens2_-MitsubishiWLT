@@ -11,12 +11,12 @@ namespace MitsubishiAR.Components.Object.States
         public void Active()
         {
             if (_objects != null)
-                ChangeState(_objects);
+                ChangeActiveCondition(_objects);
             else
                 Debug.Log("Add objects to ActiveStateComponent");
         }
 
-        public static void ChangeState(GameObject[] objects)
+        public static void ChangeActiveCondition(GameObject[] objects)
         {
             for (int i = 0; i < objects.Length; i++)
             {

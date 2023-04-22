@@ -10,9 +10,14 @@ namespace MitsubishiAR.Components.Object.States
 
         public void Hide()
         {
-            for (int i = 0; i < _objects.Length; i++)
+            HideObjects(_objects);
+        }
+
+        public static void HideObjects(GameObject[] objects)
+        {
+            for (int i = 0; i < objects.Length; i++)
             {
-                _objects[i].SetActive(false);
+                objects[i].SetActive(false);
             }
         }
     }
