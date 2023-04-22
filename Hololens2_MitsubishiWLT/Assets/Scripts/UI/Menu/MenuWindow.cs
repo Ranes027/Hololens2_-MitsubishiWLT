@@ -2,6 +2,7 @@ using System.Dynamic;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MitsubishiAR.StateMachine;
 
 namespace MitsubishiAR.UI
 {
@@ -17,6 +18,42 @@ namespace MitsubishiAR.UI
         public virtual void DisableMenu()
         {
             _menu.SetActive(false);
+        }
+
+        public virtual void ChangeStateFromMenu(string stateName)
+        {
+            var sceneContent = FindObjectOfType<SceneContent>();
+            if (sceneContent != null)
+            {
+                switch (stateName)
+                {
+                    case "Info":
+                        sceneContent.SceneSM.ChangeState(sceneContent.Info);
+                        break;
+                    case "StandInstruction":
+                        sceneContent.SceneSM.ChangeState(sceneContent.StandInstruction);
+                        break;
+                    case "ControllerCheckUp":
+                        sceneContent.SceneSM.ChangeState(sceneContent.ControllerCheckUp);
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else
+            {
+                Debug.Log("Add SceneContent to scene!");
+            }
+
+        }
+
+        public virtual void ChangeRuntimeAnimatorFromMenu(RuntimeAnimatorController animator)
+        {
+            var sceneContent = FindObjectOfType<SceneContent>();
+            if(sceneContent != null)
+            {
+                sceneContent.UpdateSceneAnimator(animator);
+            }
         }
     }
 

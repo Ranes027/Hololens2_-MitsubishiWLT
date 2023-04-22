@@ -12,34 +12,7 @@ namespace MitsubishiAR.UI
         [SerializeField] private GameObject _login;
         [SerializeField] private GameObject _settings;
 
-        [SerializeField] private GameObject _backButton;
-
-        public void ChangeStateFromMenu(string stateName)
-        {
-            var sceneContent = FindObjectOfType<SceneContent>();
-            if (sceneContent != null)
-            {
-                switch (stateName)
-                {
-                    case "Info":
-                        sceneContent.SceneSM.ChangeState(sceneContent.Info);
-                        break;
-                    case "StandTurnOn":
-                        sceneContent.SceneSM.ChangeState(sceneContent.StandInstruction);
-                        break;
-                    case "ControllerCheckUp":
-                        sceneContent.SceneSM.ChangeState(sceneContent.ControllerCheckUp);
-                        break;
-                    default:
-                        break;
-                }
-            }
-            else
-            {
-                Debug.Log("Add SceneContent to scene!");
-            }
-
-        }
+        [SerializeField] private GameObject _backButton;        
 
         public void Login()
         {
@@ -64,12 +37,12 @@ namespace MitsubishiAR.UI
             if (_menuToCheck.activeSelf == false)
             {
                 GameObject[] _objects = { _general, _targetMenu, _backButton };
-                ChangeState(_objects);
+                ChangeActiveCondition(_objects);
             }
             else
             {
                 GameObject[] _objects = { _menuToCheck, _targetMenu };
-                ChangeState(_objects);
+                ChangeActiveCondition(_objects);
             }
         }
     }
