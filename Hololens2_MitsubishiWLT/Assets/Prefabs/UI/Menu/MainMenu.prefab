@@ -14381,7 +14381,7 @@ GameObject:
   - component: {fileID: 8128362291369200741}
   - component: {fileID: 1941113367217364027}
   m_Layer: 0
-  m_Name: StandTurnOnStateButton
+  m_Name: StandInstructionButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14578,16 +14578,16 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 5512501024391411190}
+        m_TargetAssemblyTypeName: MitsubishiAR.UI.MainMenu, Assembly-CSharp
+        m_MethodName: ChangeStateFromMenu
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: StandInstruction
           m_BoolArgument: 0
         m_CallState: 2
   Events:
@@ -15774,7 +15774,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0412\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u0441\u0442\u0435\u043D\u0434\u0430"
+  m_text: "\u0418\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438 \u043A \u0441\u0442\u0435\u043D\u0434\u0443"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a84f857bec7e7345843ae29404c57ce, type: 2}
   m_sharedMaterial: {fileID: 21202819797275496, guid: 6a84f857bec7e7345843ae29404c57ce, type: 2}
