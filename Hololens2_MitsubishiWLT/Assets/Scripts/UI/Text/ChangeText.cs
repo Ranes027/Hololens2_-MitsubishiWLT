@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-namespace MitsubishiAR.UI.ChangeText
+namespace MitsubishiAR.UI.Text
 {
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class ChangeText : MonoBehaviour
