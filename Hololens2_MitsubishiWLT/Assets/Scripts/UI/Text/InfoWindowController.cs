@@ -4,7 +4,7 @@ using MitsubishiAR.Model.Data;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace MitsubishiAR.UI.Text
+namespace MitsubishiAR.UI.TextUtils
 {
     public class InfoWindowController : MonoBehaviour
     {

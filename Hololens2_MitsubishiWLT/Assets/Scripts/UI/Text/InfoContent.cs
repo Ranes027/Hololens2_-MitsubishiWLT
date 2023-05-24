@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-namespace MitsubishiAR.UI.Text
+namespace MitsubishiAR.UI.TextUtils
 {
     public class InfoContent : MonoBehaviour
     {
