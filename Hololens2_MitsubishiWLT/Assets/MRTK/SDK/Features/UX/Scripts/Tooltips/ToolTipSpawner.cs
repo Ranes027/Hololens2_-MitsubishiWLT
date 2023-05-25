@@ -44,9 +44,8 @@ namespace Microsoft.MixedReality.Toolkit.UI
         [SerializeField]
         [Range(0f, 2f)]
         private float pivotDistance = 0.25f;
-
-        [SerializeField]
-        private string toolTipText = "New Tooltip";
+        
+        public string toolTipText = "New Tooltip";
 
         [SerializeField]
         private Transform anchor = null;
