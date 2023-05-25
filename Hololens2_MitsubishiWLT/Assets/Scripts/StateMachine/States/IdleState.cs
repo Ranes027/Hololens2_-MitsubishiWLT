@@ -19,7 +19,7 @@ namespace MitsubishiAR.StateMachine
             sceneContent.UpdateSceneAnimator(sceneContent.SceneContentAnimator);        
             sceneContent.MainMenu.ActiveMenu();
             sceneContent.HandMenu.ActiveMenu();       
-            sceneContent.HandMenu.MainMenuMode();            
+            sceneContent.HandMenu.MainMenuMode();
         }
 
         public override void LogicUpdate()
