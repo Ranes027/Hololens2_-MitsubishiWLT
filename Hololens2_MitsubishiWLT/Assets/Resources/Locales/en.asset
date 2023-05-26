@@ -12,23 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03ecdeb9be65ef64882fb48dd462f617, type: 3}
   m_Name: en
   m_EditorClassIdentifier: 
-  _url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQAp6c2KL3VcOYafwqjvvqUzUeioCqeaubGmOKjFkKdM3ekIN5_RwVbNaBCZGuzY6XEAI2d5_s0vtEL/pub?gid=0&single=true&output=tsv
+  _url: https://docs.google.com/spreadsheets/d/e/2PACX-1vSls3FA-ADeE4p0rMBLosN7G9Rxf3YpG6KbnOybpJupVokw851Wco7LntL96Qr4VrfxZrslJYm5jQgc/pub?gid=0&single=true&output=tsv
   _localeItems:
   - Key: MainMenu_G_Info
     Value: "This software is designed to familiarize with augmented reality technologies
       and consider the possibility of their implementation to work with the Mitsubishi
       MELFA robotic complex.\r"
-  - Key: MainMenu_G_D1
-    Value: "The main stage for studying the structural composition of an industrial
-      robot.\r"
-  - Key: MainMenu_G_D2
-    Value: "This scene presents the main features of the MRTK SDK.\r"
   - Key: MainMenu_G_S1
     Value: "Virtual instruction for the robotic complex\r"
   - Key: MainMenu_G_S2
-    Value: "Example of using MRTK\r"
-  - Key: MainMenu_S_lang
-    Value: "Select a langauge:\r"
+    Value: "Basic interactions with the stand\r"
+  - Key: MainMenu_G_S3
+    Value: "Controller maintenance\r"
   - Key: MainMenu_L_Info
     Value: "To log in, enter your username and password in the fields below.\r"
   - Key: MainMenu_L_Login
@@ -37,129 +32,7 @@ MonoBehaviour:
     Value: "Enter password...\r"
   - Key: MainMenu_L_Confirm
     Value: "Confirm\r"
-  - Key: MenuPrefab_Button_ScaleOn
-    Value: "Enable scaling\r"
-  - Key: MenuPrefab_Button_ScaleOff
-    Value: "Disable scaling\r"
-  - Key: MenuPrefab_Button_Robot
-    Value: "Robot\r"
-  - Key: MenuPrefab_Button_Controller
-    Value: "Controller\r"
-  - Key: MenuPrefab_Button_TipsOn
-    Value: "Enable tips\r"
-  - Key: MenuPrefab_Button_TipsOff
-    Value: "Disable tips\r"
-  - Key: HandMenuPrefab_BackToMainMenu
-    Value: "Back to main menu\r"
-  - Key: ToolTipPrefab
-    Value: "It's text from prefab\r"
-  - Key: ToolTip_Objects_Camera
-    Value: "Camera\r"
-  - Key: ToolTip_Objects_Controller
-    Value: "Controller\r"
-  - Key: ToolTip_Objects_OperatorPanel
-    Value: "Operator panel\r"
-  - Key: ToolTip_Objects_Robot
-    Value: "Robot\r"
-  - Key: ToolTip_Objects_AutomatedCS
-    Value: "Automated control system\r"
-  - Key: ToolTip_Objects_Workspaces
-    Value: "Workspaces\r"
-  - Key: ToolTip_Controller_Key
-    Value: "Operation mode switch. Manual for using the control panel and automatic
-      for performing operations from the controller or other equipment.\r"
-  - Key: ToolTip_Controller_RS232
-    Value: "RS-232 specification connector for connecting a personal computer.\r"
-  - Key: ToolTip_Controller_TB
-    Value: "Interface for connecting the control panel of the robot manipulator.\r"
-  - Key: ToolTip_Controller_ES
-    Value: "\"EMG.STOP\": Stops the manipulator in an emergency state by disconnecting
-      the servo.\r"
-  - Key: ToolTip_Controller_ServoOn
-    Value: "\"SVO ON\" button: turns on the servo power.\r"
-  - Key: ToolTip_Controller_ServoOff
-    Value: "\"SAVE OFF\" button: Turns off the servo power.\r"
-  - Key: ToolTip_Controller_Display
-    Value: "Display panel \"STATUS NUMBER\": displays the program number, alarm,
-      etc.\r"
-  - Key: ToolTip_Controller_Interfaces
-    Value: "USB interfaces and battery.\r"
-  - Key: ToolTip_Controller_End
-    Value: "\"END\" button: stops program execution on the last line or at the end
-      statement.\r"
-  - Key: ToolTip_Controller_UD
-    Value: "\"UP/DOWN\" buttons: allow you to scroll the information on the display
-      up or down.\r"
-  - Key: ToolTip_Controller_Reset
-    Value: "\"RESET\" button: resets the program execution in case of an error.\r"
-  - Key: ToolTip_Controller_CD
-    Value: "\"CHNG DISP\" button: Allows you to change the details displayed on the
-      display panel.\r"
-  - Key: ToolTip_Controller_Start
-    Value: "\"START\" button: used to start the robot control program.\r"
-  - Key: ToolTip_Controller_Stop
-    Value: "\"STOP\" button: stops the program execution, the robot servo does not
-      turn off.\r"
-  - Key: InfoRobot_Title
-    Value: "Mitsubishi RV-3SDB Robot Arm\r"
-  - Key: InfoRobot_Column1_T1
-    Value: "Mitsubishi MELFA RV-3SDB is convenient for integration into technological
-      areas with limited workspace. When developing robots of this series, special
-      attention was paid to the simplicity of their integration into existing technological
-      sites.\r"
-  - Key: InfoRobot_Column1_T2
-    Value: "Technical data of the robot manipulator:\r"
-  - Key: InfoRobot_Column1_T3
-    Value: "\uF0A7 Load capacity - 3.5 kg \uF0A7 Working area radius - 727 mm \uF0A7
-      The accuracy of repeating operations - 0.02 mm \uF0A7 The accuracy of repeating
-      operations - 0.02 mm\"\r"
-  - Key: InfoRobot_Column2_T1
-    Value: "Mitsubishi Electric's RV-3SDB robot has six degrees of mobility.\r"
-  - Key: InfoRobot2_Title
-    Value: "Axes of rotation of the robot manipulator\r"
-  - Key: InfoRobot2_Text
-    Value: "Use this menu to control the Mitsubishi robot manipulator.\r"
-  - Key: InfoController_Title
-    Value: "Mitsubishi CR-1 controller\r"
-  - Key: InfoController_Column1_T1
-    Value: "The compact, modular robot control controller is an integral part of
-      the robotic system. It contains a central processor and power electrics for
-      power supply and control of the robot.\r"
-  - Key: InfoController_Column1_T2
-    Value: "Advantages of this model:\r"
-  - Key: InfoController_Column1_T3
-    Value: "\uF0A7 Small installation area; \uF0A7 Digital information processing
-      capabilities that allow you to run up to 32 programs together, working in parallel;
-      \uF0A7 Large program memory - the controller can store up to 88 independent
-      programs, each of which can access the other, for example, when different products
-      require different control programs.\"\r"
-  - Key: InfoController_Column2_T1
-    Value: "Technical data of the controller\r"
-  - Key: InfoController_Column2_T2
-    Value: "\uF0A7 Processor - 64-bit RISC + DSP \uF0A7 The maximum number of programs
-      is 88 \uF0A7 The maximum number of program steps is 5000 \uF0A7 The maximum
-      number of training points is 2500 \uF0A7 Built-in inputs/outputs - 16 In/16
-      Out \uF0A7 Safety Functions - Emergency switch \uF0A7 Power consumption - 0.7
-      kVA \uF0A7 Operating temperature - 0 \u2013 40 C \uF0A7 Dimensions - 212 x
-      166 x 290 mm\"\r"
-  - Key: InfoControllerMini_Title
-    Value: "Mitsubishi CR-1 controller\r"
-  - Key: InfoControllerMini_InfoButton
-    Value: "More detailed\r"
-  - Key: InfoControllerMini_Column1_T1
-    Value: "MELFA robot controllers are small and compact. The size of the controllers
-      is close to the size of standard PCs, and they can also be installed in limited
-      conditions without taking up valuable production space. Thanks to the multitasking
-      operating system and the MELFA BASIC programming language, they are easy to
-      use to control other elements of the system.\r"
-  - Key: InfoRobotMini_Title
-    Value: "Mitsubishi RV-3SDB Robot Arm\r"
-  - Key: InfoRobotMini_InfoButton
-    Value: "More detailed\r"
-  - Key: InfoRobotMini_Column1_T1
-    Value: 'A robot manipulator is a type of industrial robots. Such robots perform
-      the functions of a human hand. The connections of the manipulator segments
-      allow rotational and translational movements. Robots can recognize, understand
-      and change the environment. Their field of activity is expanding every year.
-      New programs are being introduced, robots can perform more and more precise
-      actions: collect cars, sort garbage, select and replace the necessary components.'
+  - Key: MainMenu_S_lang
+    Value: "Select a langauge:\r"
+  - Key: MainMenu_S_show
+    Value: 'Display options:'
