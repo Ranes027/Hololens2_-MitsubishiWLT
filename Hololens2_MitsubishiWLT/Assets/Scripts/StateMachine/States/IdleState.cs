@@ -16,16 +16,14 @@ namespace MitsubishiAR.StateMachine
         public override void Enter()
         {
             base.Enter();
-            sceneContent.UpdateSceneAnimator(sceneContent.SceneContentAnimator);        
+            sceneContent.UpdateSceneAnimator(sceneContent.SceneContentAnimator);
             sceneContent.MainMenu.ActiveMenu();
-            sceneContent.HandMenu.ActiveMenu();       
+            sceneContent.HandMenu.ActiveMenu();
             sceneContent.HandMenu.MainMenuMode();
         }
 
         public override void LogicUpdate()
         {
-            base.LogicUpdate();
-
             if (sceneContent.AdminMenu.gameObject.activeSelf == true)
             {
                 stateMachine.ChangeState(sceneContent.Admin);

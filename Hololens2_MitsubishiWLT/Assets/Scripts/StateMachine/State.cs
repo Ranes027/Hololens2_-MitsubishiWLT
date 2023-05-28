@@ -23,8 +23,11 @@ namespace MitsubishiAR.StateMachine
 
         public virtual void LogicUpdate()
         {
-
-        }        
+            if (sceneContent.MainMenu.gameObject.activeSelf == true)
+            {
+                stateMachine.ChangeState(sceneContent.Idle);
+            }
+        }
 
         public virtual void Exit()
         {

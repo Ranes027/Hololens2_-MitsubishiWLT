@@ -19,7 +19,7 @@ namespace MitsubishiAR.StateMachine
         [Header("Scene Objects")]
         [SerializeField] private GameObject[] _tips;
         [SerializeField] private GameObject[] _standInstObjects;
-        [Space]
+        
         public StateMachine SceneSM;
         public IdleState Idle;
         public AdminState Admin;

@@ -21,12 +21,6 @@ namespace MitsubishiAR.StateMachine
         public override void LogicUpdate()
         {
             base.LogicUpdate();
-
-            if (sceneContent.MainMenu.gameObject.activeSelf == true)
-            {
-                stateMachine.ChangeState(sceneContent.Idle);
-                Debug.Log("State changed to Idle");
-            }
         }
 
         public override void Exit()
