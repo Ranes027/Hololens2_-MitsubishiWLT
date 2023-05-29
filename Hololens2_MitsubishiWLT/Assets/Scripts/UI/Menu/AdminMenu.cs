@@ -1,30 +1,31 @@
-using System.Dynamic;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using static MitsubishiAR.Components.Object.States.ActiveStateComponent;
+using static MitsubishiAR.Components.Object.States.MeshRendererStateComponent;
+using static MitsubishiAR.Components.Object.States.ScalingStateComponent;
 
 namespace MitsubishiAR.UI
 {
     public class AdminMenu : MenuWindow
     {
-        [SerializeField] private UnityEvent _showObjects;
-        [SerializeField] private UnityEvent _hideObjects;
-        [SerializeField] private UnityEvent _boundsState;
+        [SerializeField] private GameObject[] _objects;
+        [SerializeField] private GameObject[] _meshes;
+        [SerializeField] private GameObject[] _bounds;
 
-        public void ShowSceneObjects()
+        public void SceneObjectsState(bool state)
         {
-            _showObjects?.Invoke();
-        }
-
-        public void HideSceneObjects()
-        {
-            _hideObjects?.Invoke();
+            SwitchActiveCondition(_objects, state);
+            ChangeMeshRendererState(_meshes, state);
         }
 
         public void SwitchBoundsState()
         {
-            _boundsState?.Invoke();
+            ChangeScalingState(_bounds);
+        }
+
+        public void SwitchBoundsState(bool state)
+        {
+            ChangeScalingState(_bounds, state);
         }
     }
 

@@ -37,12 +37,12 @@ namespace MitsubishiAR.UI
             if (_menuToCheck.activeSelf == false)
             {
                 GameObject[] _objects = { _general, _targetMenu, _backButton };
-                ChangeActiveCondition(_objects);
+                SwitchActiveCondition(_objects);
             }
             else
             {
                 GameObject[] _objects = { _menuToCheck, _targetMenu };
-                ChangeActiveCondition(_objects);
+                SwitchActiveCondition(_objects);
             }
         }
     }

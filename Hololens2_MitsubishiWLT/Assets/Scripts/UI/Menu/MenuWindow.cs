@@ -10,14 +10,9 @@ namespace MitsubishiAR.UI
     {   
         [SerializeField] private GameObject _menu;
 
-        public virtual void ActiveMenu()
+        public virtual void MenuState(bool state)
         {
-            _menu.SetActive(true);
-        }
-
-        public virtual void DisableMenu()
-        {
-            _menu.SetActive(false);
+            _menu.SetActive(state);
         }
 
         public virtual void ChangeStateFromMenu(string stateName)
