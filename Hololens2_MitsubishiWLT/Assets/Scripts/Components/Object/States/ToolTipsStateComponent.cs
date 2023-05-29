@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.UI;
 
 namespace MitsubishiAR.Components.Object.States
 {
-    public class ToolTipsStateComponent : MonoBehaviour
+    public class ToolTipsStateComponent : SwitchComponentState
     {
         [SerializeField] private GameObject[] _objects;
 
@@ -13,16 +11,7 @@ namespace MitsubishiAR.Components.Object.States
         {
             for (int i = 0; i < _objects.Length; i++)
             {
-                EnableToolTip(_objects[i]);
-            }
-        }
-
-        private void EnableToolTip(GameObject gameObject)
-        {
-            var toolTip = gameObject.GetComponent<ToolTipSpawner>();
-            if (toolTip != null)
-            {
-                toolTip.enabled = !toolTip.enabled;
+                SwitchState<ToolTipSpawner>(_objects[i]);
             }
         }
     }
