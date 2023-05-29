@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using static MitsubishiAR.Components.Object.States.ShowObjectsComponent;
-using static MitsubishiAR.Components.Object.States.HideObjectsComponent;
+using static MitsubishiAR.Components.Object.States.ActiveStateComponent;
 
 namespace MitsubishiAR.StateMachine
 {
@@ -15,8 +11,8 @@ namespace MitsubishiAR.StateMachine
         public override void Enter()
         {
             base.Enter();
-            sceneContent.StandMenu.ActiveMenu();
-            ShowObjects(sceneContent.StandInstObjects);
+            sceneContent.StandMenu.MenuState(true);
+            SwitchActiveCondition(sceneContent.StandInstObjects, true);
         }
 
         public override void LogicUpdate()
@@ -27,8 +23,8 @@ namespace MitsubishiAR.StateMachine
         public override void Exit()
         {
             base.Exit();
-            sceneContent.StandMenu.DisableMenu();
-            HideObjects(sceneContent.StandInstObjects);
+            sceneContent.StandMenu.MenuState(false);
+            SwitchActiveCondition(sceneContent.StandInstObjects, false);
         }
     }
 

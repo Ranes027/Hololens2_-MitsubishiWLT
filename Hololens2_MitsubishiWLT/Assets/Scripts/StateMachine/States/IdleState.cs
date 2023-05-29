@@ -17,8 +17,8 @@ namespace MitsubishiAR.StateMachine
         {
             base.Enter();
             sceneContent.UpdateSceneAnimator(sceneContent.SceneContentAnimator);
-            sceneContent.MainMenu.ActiveMenu();
-            sceneContent.HandMenu.ActiveMenu();
+            sceneContent.MainMenu.MenuState(true);
+            sceneContent.HandMenu.MenuState(true);
             sceneContent.HandMenu.MainMenuMode();
         }
 
@@ -40,7 +40,7 @@ namespace MitsubishiAR.StateMachine
         public override void Exit()
         {
             base.Exit();
-            sceneContent.MainMenu.DisableMenu();
+            sceneContent.MainMenu.MenuState(false);
             sceneContent.HandMenu.OutOfMainMenuMode();
         }
     }

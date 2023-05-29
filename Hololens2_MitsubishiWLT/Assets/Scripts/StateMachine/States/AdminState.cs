@@ -13,9 +13,9 @@ namespace MitsubishiAR.StateMachine
         public override void Enter()
         {
             base.Enter();
-            sceneContent.AdminMenu.ShowSceneObjects();
-            sceneContent.AdminMenu.SwitchBoundsState();
-            sceneContent.AdminMenu.ActiveMenu();
+            sceneContent.AdminMenu.SceneObjectsState(true);
+            sceneContent.AdminMenu.SwitchBoundsState(true);
+            sceneContent.AdminMenu.MenuState(true);
         }
 
         public override void LogicUpdate()
@@ -26,9 +26,9 @@ namespace MitsubishiAR.StateMachine
         public override void Exit()
         {
             base.Exit();
-            sceneContent.AdminMenu.DisableMenu();
-            sceneContent.AdminMenu.SwitchBoundsState();
-            sceneContent.AdminMenu.HideSceneObjects();
+            sceneContent.AdminMenu.MenuState(false);
+            sceneContent.AdminMenu.SwitchBoundsState(false);
+            sceneContent.AdminMenu.SceneObjectsState(false);
         }
     }
 
