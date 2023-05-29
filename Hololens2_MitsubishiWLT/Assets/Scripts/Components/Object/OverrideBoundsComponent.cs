@@ -13,7 +13,7 @@ namespace MitsubishiAR.Components.Object
         [SerializeField] private GameObject _targetObject;
 
         [SerializeField] private UnityEvent _action;
-        
+
         public void OverrideBounds()
         {
             var obj = _mainObject.GetComponent<BoundsControl>();
@@ -33,10 +33,10 @@ namespace MitsubishiAR.Components.Object
         }
 
         private void CheckScalingState()
-        {   
+        {
             var bounds = _mainObject.GetComponent<BoundsControl>();
 
-            if(bounds.enabled == true)
+            if (bounds.enabled == true)
             {
                 _action?.Invoke();
             }
@@ -54,14 +54,7 @@ namespace MitsubishiAR.Components.Object
 
         private void CheckOverridesState()
         {
-            if (_mainObject == _targetObject)
-            {
-                SceneConstants.Instance.SceneInfo.BoundsOverrides = false;
-            }
-            else
-            {
-                SceneConstants.Instance.SceneInfo.BoundsOverrides = true;
-            }
+            SceneConstants.Instance.SceneInfo.BoundsOverrides = !(_mainObject == _targetObject);
         }
     }
 }
