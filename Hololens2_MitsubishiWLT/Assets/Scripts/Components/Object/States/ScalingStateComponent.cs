@@ -1,14 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
 using MitsubishiAR.Components.Scene;
-using static MitsubishiAR.Components.Object.States.BoxColliderStateComponent;
 
 namespace MitsubishiAR.Components.Object.States
 {
-    public class ScalingStateComponent : MonoBehaviour
+    public class ScalingStateComponent : SwitchComponentState
     {
         [SerializeField] private GameObject[] _objects;
         [SerializeField] private bool _needToSwitchBoxState;
@@ -17,37 +14,35 @@ namespace MitsubishiAR.Components.Object.States
         {
             for (int i = 0; i < _objects.Length; i++)
             {
-                SwitchBoundsControlState(_objects[i]);
-                SwitchObjectManipulatorState(_objects[i]);
+                SwitchState<BoundsControl>(_objects[i]);
+                SwitchState<BoundingBox>(_objects[i]);
+                SwitchState<ObjectManipulator>(_objects[i]);
 
                 if (SceneConstants.Instance.SceneInfo.BoundsOverrides == false && _needToSwitchBoxState)
                 {
-                    SwitchBoxColliderState(_objects[i]);
+                    SwitchColliderState<BoxCollider>(_objects[i]);
                 }
             }
         }
 
-        private void SwitchBoundsControlState(GameObject gameObject)
+        public static void ChangeScalingState(GameObject[] objects)
         {
-            var bounds = gameObject.GetComponent<BoundsControl>();
-
-            if (bounds == null)
+            for (int i = 0; i < objects.Length; i++)
             {
-                var boundBox = gameObject.GetComponent<BoundingBox>();
-                if (boundBox != null)
-                    boundBox.enabled = !boundBox.enabled;
-            }
-            else
-            {
-                bounds.enabled = !bounds.enabled;
+                SwitchState<BoundsControl>(objects[i]);
+                SwitchState<BoundingBox>(objects[i]);
+                SwitchState<ObjectManipulator>(objects[i]);
             }
         }
 
-        private void SwitchObjectManipulatorState(GameObject gameObject)
+        public static void ChangeScalingState(GameObject[] objects, bool state)
         {
-            var manipulator = gameObject.GetComponent<ObjectManipulator>();
-            if (manipulator != null)
-                manipulator.enabled = !manipulator.enabled;
+            for (int i = 0; i < objects.Length; i++)
+            {
+                SwitchState<BoundsControl>(objects[i], state);
+                SwitchState<BoundingBox>(objects[i], state);
+                SwitchState<ObjectManipulator>(objects[i], state);
+            }
         }
     }
 }
