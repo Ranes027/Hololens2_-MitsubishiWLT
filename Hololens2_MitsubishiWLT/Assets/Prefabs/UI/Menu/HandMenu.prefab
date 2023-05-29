@@ -342,7 +342,7 @@ MonoBehaviour:
       - m_Target: {fileID: 271262526048119180}
         m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.States.ActiveStateComponent,
           Assembly-CSharp
-        m_MethodName: Active
+        m_MethodName: SwitchActiveCondition
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2543,7 +2543,7 @@ MonoBehaviour:
       - m_Target: {fileID: 3167587117239561978}
         m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.States.ActiveStateComponent,
           Assembly-CSharp
-        m_MethodName: Active
+        m_MethodName: SwitchActiveCondition
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

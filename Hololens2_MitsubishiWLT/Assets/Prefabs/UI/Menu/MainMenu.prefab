@@ -22080,10 +22080,6 @@ MonoBehaviour:
   VoiceCommand: 
   voiceRequiresFocus: 1
   profiles:
-  - Target: {fileID: 8029801519290578339}
-    Themes:
-    - {fileID: 11400000, guid: 6c08928bdf950d54390c1346d23d422b, type: 2}
-    - {fileID: 11400000, guid: cb5abaa7279811d409e5bac06ad02a1f, type: 2}
   - Target: {fileID: 8029564991407690745}
     Themes:
     - {fileID: 11400000, guid: 0eea8a8be0e42494083a2dc52fab717f, type: 2}
