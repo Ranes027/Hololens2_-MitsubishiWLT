@@ -4,25 +4,24 @@ using UnityEngine;
 
 namespace MitsubishiAR.Components.Object.States
 {
-    public class MeshRendererStateComponent : MonoBehaviour
+    public class MeshRendererStateComponent : SwitchComponentState
     {
         [SerializeField] private GameObject[] _objects;
 
-        public void Active()
+        public void ChangeMeshRendererState()
         {
             for (int i = 0; i < _objects.Length; i++)
             {
-                SwitchMeshRendererState(_objects[i]);
+                SwitchRendererState<MeshRenderer>(_objects[i]);
             }
         }
 
-        public static void SwitchMeshRendererState(GameObject gameObject)
+        public static void ChangeMeshRendererState(GameObject[] objects, bool state)
         {
-            var mesh = gameObject.GetComponent<MeshRenderer>();
-            if (mesh != null)
-                mesh.enabled = !mesh.enabled;
-            else
-                Debug.Log("Add MeshRenderer to object!");
+            for (int i = 0; i < objects.Length; i++)
+            {
+                SwitchRendererState<MeshRenderer>(objects[i], state);
+            }
         }
     }
 
