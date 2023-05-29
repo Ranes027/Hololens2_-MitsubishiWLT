@@ -4,25 +4,16 @@ using UnityEngine;
 
 namespace MitsubishiAR.Components.Object.States
 {
-    public class BoxColliderStateComponent : MonoBehaviour
+    public class BoxColliderStateComponent : SwitchComponentState
     {
         [SerializeField] private GameObject[] _objects;
 
-        public void Active()
+        public void ChangeBoxColliderState()
         {
             for (int i = 0; i < _objects.Length; i++)
             {
-                SwitchBoxColliderState(_objects[i]);
+                SwitchColliderState<BoxCollider>(_objects[i]);
             }
-        }
-
-        public static void SwitchBoxColliderState(GameObject gameObject)
-        {
-            var box = gameObject.GetComponent<BoxCollider>();
-            if (box != null)
-                box.enabled = !box.enabled;
-            else
-                Debug.Log("Add BoxCollider to object!");
         }
     }
 
