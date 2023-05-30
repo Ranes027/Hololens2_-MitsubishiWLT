@@ -1453,6 +1453,7 @@ GameObject:
   - component: {fileID: 271262527468525783}
   - component: {fileID: 271262527468525781}
   - component: {fileID: 271262527468525780}
+  - component: {fileID: 4323278018904319520}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -1570,9 +1571,9 @@ MonoBehaviour:
   m_fontSize: 0.06
   m_fontSizeBase: 0.06
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0.01
+  m_fontSizeMax: 0.06
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -1612,6 +1613,21 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!114 &4323278018904319520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271262527468525782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 1
+  _key: HandMenu_MenuButton
+  _capitalize: 0
 --- !u!1 &271262527876402056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2876,6 +2892,7 @@ GameObject:
   - component: {fileID: 3167587117726334735}
   - component: {fileID: 3167587117726334835}
   - component: {fileID: 3167587117726334732}
+  - component: {fileID: 8604042781382019735}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -2993,9 +3010,9 @@ MonoBehaviour:
   m_fontSize: 0.04
   m_fontSizeBase: 0.04
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0.01
+  m_fontSizeMax: 0.04
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -3035,6 +3052,21 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!114 &8604042781382019735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3167587117726334734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 1
+  _key: HandMenu_AdminButton
+  _capitalize: 0
 --- !u!1 &3167587117799006673
 GameObject:
   m_ObjectHideFlags: 0

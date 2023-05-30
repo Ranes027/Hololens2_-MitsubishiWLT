@@ -35,4 +35,8 @@ MonoBehaviour:
   - Key: MainMenu_S_lang
     Value: "Select a langauge:\r"
   - Key: MainMenu_S_show
-    Value: 'Display options:'
+    Value: "Display options:\r"
+  - Key: HandMenu_AdminButton
+    Value: "Admin\r"
+  - Key: HandMenu_MenuButton
+    Value: Main menu
