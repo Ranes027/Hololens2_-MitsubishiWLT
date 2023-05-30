@@ -39,4 +39,14 @@ MonoBehaviour:
   - Key: HandMenu_AdminButton
     Value: "Admin\r"
   - Key: HandMenu_MenuButton
-    Value: Main menu
+    Value: "Main menu\r"
+  - Key: AdminMenu_B1
+    Value: "Hide Objects\r"
+  - Key: AdminMenu_B4
+    Value: "Show Objects\r"
+  - Key: AdminMenu_B2
+    Value: "Bounds State\r"
+  - Key: AdminMenu_B3
+    Value: "Open WLT Menu\r"
+  - Key: AdminMenu_B5
+    Value: Close WLT Menu

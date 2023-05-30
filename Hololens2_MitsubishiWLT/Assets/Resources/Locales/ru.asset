@@ -52,4 +52,14 @@ MonoBehaviour:
   - Key: HandMenu_AdminButton
     Value: "\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\r"
   - Key: HandMenu_MenuButton
-    Value: "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043C\u0435\u043D\u044E"
+    Value: "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043C\u0435\u043D\u044E\r"
+  - Key: AdminMenu_B1
+    Value: "\u0421\u043A\u0440\u044B\u0442\u044C \u043E\u0431\u044A\u0435\u043A\u0442\u044B\r"
+  - Key: AdminMenu_B4
+    Value: "\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u043E\u0431\u044A\u0435\u043A\u0442\u044B\r"
+  - Key: AdminMenu_B2
+    Value: "\u0413\u0440\u0430\u043D\u0438\u0446\u044B\r"
+  - Key: AdminMenu_B3
+    Value: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C WLT Menu\r"
+  - Key: AdminMenu_B5
+    Value: "\u0417\u0430\u043A\u0440\u044B\u0442\u044C WLT Menu"
