@@ -3868,6 +3868,7 @@ GameObject:
   - component: {fileID: 4227087421566705285}
   - component: {fileID: 2813647840824346530}
   - component: {fileID: 3629361791163876207}
+  - component: {fileID: 3164994661075508393}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3953,9 +3954,9 @@ MonoBehaviour:
   m_fontSize: 96
   m_fontSizeBase: 96
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 58
+  m_fontSizeMax: 96
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -3992,6 +3993,21 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &3164994661075508393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4974573955276831956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 0
+  _key: StandInstrMenu_Title
+  _capitalize: 0
 --- !u!1 &4991349564863109391
 GameObject:
   m_ObjectHideFlags: 0
@@ -4551,6 +4567,7 @@ GameObject:
   - component: {fileID: 5401150304465349462}
   - component: {fileID: 5401150304465349418}
   - component: {fileID: 5401150304465349461}
+  - component: {fileID: 877008503426081486}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -4668,9 +4685,9 @@ MonoBehaviour:
   m_fontSize: 0.05
   m_fontSizeBase: 0.05
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0.01
+  m_fontSizeMax: 0.05
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -4710,6 +4727,21 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!114 &877008503426081486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5401150304465349463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 1
+  _key: StandInstrMenu_B1
+  _capitalize: 0
 --- !u!1 &5401150304951663269
 GameObject:
   m_ObjectHideFlags: 0
@@ -7441,6 +7473,7 @@ GameObject:
   - component: {fileID: 1287319514648519254}
   - component: {fileID: 2968103735360637729}
   - component: {fileID: 6248363205490241838}
+  - component: {fileID: 2206581888121061735}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -7559,9 +7592,9 @@ MonoBehaviour:
   m_fontSize: 0.05
   m_fontSizeBase: 0.05
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0.01
+  m_fontSizeMax: 0.05
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -7601,6 +7634,21 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!114 &2206581888121061735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8525246928752603788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 1
+  _key: StandInstrMenu_B2
+  _capitalize: 0
 --- !u!1 &8584643313909211968
 GameObject:
   m_ObjectHideFlags: 0

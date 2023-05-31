@@ -49,4 +49,10 @@ MonoBehaviour:
   - Key: AdminMenu_B3
     Value: "Open WLT Menu\r"
   - Key: AdminMenu_B5
-    Value: Close WLT Menu
+    Value: "Close WLT Menu\r"
+  - Key: StandInstrMenu_Title
+    Value: "Choosing the necessary instructions:\r"
+  - Key: StandInstrMenu_B1
+    Value: "Turning on the stand\r"
+  - Key: StandInstrMenu_B2
+    Value: Emergency shutdown of the stand
