@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using MitsubishiAR.StateMachine;
 using static MitsubishiAR.Components.Object.States.ActiveStateComponent;
 
 namespace MitsubishiAR.UI

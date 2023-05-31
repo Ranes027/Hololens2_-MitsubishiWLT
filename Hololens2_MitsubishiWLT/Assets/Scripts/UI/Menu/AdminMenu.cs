@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Events;
 using static MitsubishiAR.Components.Object.States.ActiveStateComponent;
 using static MitsubishiAR.Components.Object.States.MeshRendererStateComponent;
 using static MitsubishiAR.Components.Object.States.ScalingStateComponent;
