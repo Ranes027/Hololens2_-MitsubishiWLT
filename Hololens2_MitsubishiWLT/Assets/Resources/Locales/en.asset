@@ -55,4 +55,18 @@ MonoBehaviour:
   - Key: StandInstrMenu_B1
     Value: "Turning on the stand\r"
   - Key: StandInstrMenu_B2
-    Value: Emergency shutdown of the stand
+    Value: "Emergency shutdown of the stand\r"
+  - Key: ControllerInfoMenu_T1
+    Value: "The compact, modular robot control controller is an integral part of
+      the robotic system. It contains a central processor and power electrics for
+      power supply and control of the robot.\r"
+  - Key: ControllerInfoMenu_T2
+    Value: "For detailed information about the controller elements, click the \"Magnifier\"
+      button and hover over the controller elements.\r"
+  - Key: ControllerInfoMenu_InfoButton
+    Value: "Technical characteristics of the Mitsubishi CR-1 controller'/n' '/n'
+      Control Mode: PTP and CP Processor: 64-bit RISC + DSP Maximum number of programs:
+      88 Maximum number of program steps: 5000 Maximum number of training points:
+      2500 Built-in inputs/Outputs: 16 In/16 Out Safety Functions: Emergency switch
+      Power supply: 207 \u2013 253 V Power consumption: 0.7 kVA Operating temperature:
+      0 \u2013 40C Dimensions: 212 x 166 x 290 mm"
