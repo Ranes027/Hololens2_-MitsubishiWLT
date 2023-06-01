@@ -57,7 +57,8 @@ namespace MitsubishiAR.Model.Localization
             try
             {
                 var parts = row.Split('\t');
-                _localeItems.Add(new LocaleItem { Key = parts[0], Value = parts[1] });
+                string value = parts[1].Replace("\\n", "\n");
+                _localeItems.Add(new LocaleItem { Key = parts[0], Value = value });
             }
             catch (Exception e)
             {
