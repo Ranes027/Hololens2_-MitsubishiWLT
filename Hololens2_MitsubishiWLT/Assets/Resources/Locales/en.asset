@@ -100,7 +100,42 @@ MonoBehaviour:
   - Key: Pilz_Name
     Value: "Pilz Safety Relay\r"
   - Key: Pilz_Tip
-    Value: Safety relays are necessary for the normal functioning of the automation
+    Value: "Safety relays are necessary for the normal functioning of the automation
       system, as they are currently an integral part of any industrial devices. The
       principle of the safety relay is based on the impossibility of switching on
-      the power circuits of the equipment in case of various malfunctions.
+      the power circuits of the equipment in case of various malfunctions.\r"
+  - Key: ToolTip_Controller_Key
+    Value: "Operation mode switch. Manual for using the control panel and automatic
+      for performing operations from the controller or other equipment.\r"
+  - Key: ToolTip_Controller_RS232
+    Value: "RS-232 specification connector for connecting a personal computer.\r"
+  - Key: ToolTip_Controller_TB
+    Value: "Interface for connecting the control panel of the robot manipulator.\r"
+  - Key: ToolTip_Controller_ES
+    Value: "\"EMG.STOP\": Stops the manipulator in an emergency state by disconnecting
+      the servo.\r"
+  - Key: ToolTip_Controller_ServoOn
+    Value: "\"SVO ON\" button: turns on the servo power.\r"
+  - Key: ToolTip_Controller_ServoOff
+    Value: "\"SAVE OFF\" button: Turns off the servo power.\r"
+  - Key: ToolTip_Controller_Display
+    Value: "Display panel \"STATUS NUMBER\": displays the program number, alarm,
+      etc.\r"
+  - Key: ToolTip_Controller_Interfaces
+    Value: "USB interfaces and battery.\r"
+  - Key: ToolTip_Controller_End
+    Value: "\"END\" button: stops program execution on the last line or at the end
+      statement.\r"
+  - Key: ToolTip_Controller_UD
+    Value: "\"UP/DOWN\" buttons: allow you to scroll the information on the display
+      up or down.\r"
+  - Key: ToolTip_Controller_Reset
+    Value: "\"RESET\" button: resets the program execution in case of an error.\r"
+  - Key: ToolTip_Controller_CD
+    Value: "\"CHNG DISP\" button: Allows you to change the details displayed on the
+      display panel.\r"
+  - Key: ToolTip_Controller_Start
+    Value: "\"START\" button: used to start the robot control program.\r"
+  - Key: ToolTip_Controller_Stop
+    Value: '"STOP" button: stops the program execution, the robot servo does not
+      turn off.'

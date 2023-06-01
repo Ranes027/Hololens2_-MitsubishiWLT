@@ -24858,6 +24858,7 @@ GameObject:
   - component: {fileID: 8902960242072365326}
   - component: {fileID: 2793728170312576214}
   - component: {fileID: 235212849209434549}
+  - component: {fileID: 235212849209434550}
   m_Layer: 0
   m_Name: "\u041E\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F
     \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B"
@@ -24908,6 +24909,21 @@ MonoBehaviour:
     \u0438\u043B\u0438 \u0443 \u043E\u043F\u0435\u0440\u0430\u0442\u043E\u0440\u0430
     end."
   anchor: {fileID: 0}
+--- !u!114 &235212849209434550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235212849209434548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 4
+  _key: ToolTip_Controller_End
+  _capitalize: 0
 --- !u!1 &252283373255610286
 GameObject:
   m_ObjectHideFlags: 0
@@ -25089,6 +25105,7 @@ GameObject:
   - component: {fileID: 4604055408877416243}
   - component: {fileID: 2793728171667726120}
   - component: {fileID: 449921164615017351}
+  - component: {fileID: 449921164615017352}
   m_Layer: 0
   m_Name: "\u0414\u0438\u0441\u043F\u043B\u0435\u0439"
   m_TagString: Untagged
@@ -25138,6 +25155,21 @@ MonoBehaviour:
     \u0430\u0432\u0430\u0440\u0438\u0439\u043D\u044B\u0439 \u0441\u0438\u0433\u043D\u0430\u043B
     \u0438 \u0442.\u0434."
   anchor: {fileID: 0}
+--- !u!114 &449921164615017352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449921164615017350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 4
+  _key: ToolTip_Controller_Display
+  _capitalize: 0
 --- !u!114 &513695628293267345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25389,6 +25421,7 @@ GameObject:
   - component: {fileID: 1486483802089375976}
   - component: {fileID: 2793728169971754658}
   - component: {fileID: 746985845490370609}
+  - component: {fileID: 746985845490370610}
   m_Layer: 0
   m_Name: "\u0412\u043A\u043B \u0441\u0435\u0440\u0432\u043E\u043F\u0440\u0438\u0432\u043E\u0434"
   m_TagString: Untagged
@@ -25435,6 +25468,21 @@ MonoBehaviour:
   toolTipText: "\u041A\u043D\u043E\u043F\u043A\u0430 \"SVO ON\": \u0432\u043A\u043B\u044E\u0447\u0430\u0435\u0442
     \u043F\u0438\u0442\u0430\u043D\u0438\u0435 \u0441\u0435\u0440\u0432\u043E\u043F\u0440\u0438\u0432\u043E\u0434\u0430."
   anchor: {fileID: 0}
+--- !u!114 &746985845490370610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746985845490370608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 4
+  _key: ToolTip_Controller_ServoOn
+  _capitalize: 0
 --- !u!114 &869375561624649383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25989,6 +26037,7 @@ GameObject:
   - component: {fileID: 5358623161342425158}
   - component: {fileID: 2793728171494338407}
   - component: {fileID: 1384726122635350724}
+  - component: {fileID: 1384726122635350725}
   m_Layer: 0
   m_Name: "\u0412\u044B\u043A\u043B \u0441\u0435\u0440\u0432\u043E\u043F\u0440\u0438\u0432\u043E\u0434"
   m_TagString: Untagged
@@ -26035,6 +26084,21 @@ MonoBehaviour:
   toolTipText: "\u041A\u043D\u043E\u043F\u043A\u0430 \"SVO OFF\": \u043E\u0442\u043A\u043B\u044E\u0447\u0430\u0435\u0442
     \u043F\u0438\u0442\u0430\u043D\u0438\u0435 \u0441\u0435\u0440\u0432\u043E\u043F\u0440\u0438\u0432\u043E\u0434\u0430."
   anchor: {fileID: 0}
+--- !u!114 &1384726122635350725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384726122635350723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 4
+  _key: ToolTip_Controller_ServoOff
+  _capitalize: 0
 --- !u!33 &1392669905208469606
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -26792,6 +26856,7 @@ GameObject:
   - component: {fileID: 1144895126081417698}
   - component: {fileID: 2793728170839415775}
   - component: {fileID: 1986759174788678267}
+  - component: {fileID: 1986759174788678268}
   m_Layer: 0
   m_Name: "\u0421\u0442\u043E\u043F"
   m_TagString: Untagged
@@ -26840,6 +26905,21 @@ MonoBehaviour:
     \u0441\u0435\u0440\u0432\u043E\u043F\u0440\u0438\u0432\u043E\u0434 \u0440\u043E\u0431\u043E\u0442\u0430
     \u043D\u0435 \u0432\u044B\u043A\u043B\u044E\u0447\u0430\u0435\u0442\u0441\u044F."
   anchor: {fileID: 0}
+--- !u!114 &1986759174788678268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986759174788678266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 4
+  _key: ToolTip_Controller_Stop
+  _capitalize: 0
 --- !u!4 &1988350635082207809
 Transform:
   m_ObjectHideFlags: 0
@@ -26918,6 +26998,7 @@ GameObject:
   - component: {fileID: 2405354332520619920}
   - component: {fileID: 2793728172006606886}
   - component: {fileID: 2793728172006606885}
+  - component: {fileID: 2062214144922816810}
   m_Layer: 0
   m_Name: "\u0421\u0442\u0430\u0440\u0442"
   m_TagString: Untagged
@@ -26925,6 +27006,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2062214144922816810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062214144922816809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 4
+  _key: ToolTip_Controller_Start
+  _capitalize: 0
 --- !u!4 &2073376816375278819
 Transform:
   m_ObjectHideFlags: 0
@@ -27382,6 +27478,7 @@ GameObject:
   - component: {fileID: 2104034283075749644}
   - component: {fileID: 2793728171387623596}
   - component: {fileID: 2547734863995266393}
+  - component: {fileID: 2547734863995266394}
   m_Layer: 0
   m_Name: "\u0421\u0431\u0440\u043E\u0441"
   m_TagString: Untagged
@@ -27429,6 +27526,21 @@ MonoBehaviour:
     \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B
     \u0432 \u0441\u043B\u0443\u0447\u0430\u0435 \u043E\u0448\u0438\u0431\u043A\u0438."
   anchor: {fileID: 0}
+--- !u!114 &2547734863995266394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2547734863995266392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 4
+  _key: ToolTip_Controller_Reset
+  _capitalize: 0
 --- !u!33 &2576875207765908103
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -28310,6 +28422,7 @@ GameObject:
   - component: {fileID: 5156506209638038441}
   - component: {fileID: 2793728170334383008}
   - component: {fileID: 3973897903059746989}
+  - component: {fileID: 3973897903059746990}
   m_Layer: 0
   m_Name: "\u0410\u0432\u0430\u0440\u0438\u0439\u043D\u0430\u044F \u043E\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430"
   m_TagString: Untagged
@@ -28358,6 +28471,21 @@ MonoBehaviour:
     \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0438, \u043E\u0442\u043A\u043B\u044E\u0447\u0430\u044F
     \u0441\u0435\u0440\u0432\u043E\u043F\u0440\u0438\u0432\u043E\u0434."
   anchor: {fileID: 0}
+--- !u!114 &3973897903059746990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3973897903059746988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 4
+  _key: ToolTip_Controller_ES
+  _capitalize: 0
 --- !u!4 &4108584514608974405
 Transform:
   m_ObjectHideFlags: 0
@@ -31079,6 +31207,7 @@ GameObject:
   - component: {fileID: 5204444239159604609}
   - component: {fileID: 2793728171048382007}
   - component: {fileID: 5853274722935355059}
+  - component: {fileID: 5853274722935355060}
   m_Layer: 0
   m_Name: TB
   m_TagString: Untagged
@@ -31126,6 +31255,21 @@ MonoBehaviour:
     \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F \u043F\u0443\u043B\u044C\u0442\u0430
     \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0440\u043E\u0431\u043E\u0442\u043E\u043C-\u043C\u0430\u043D\u0438\u043F\u0443\u043B\u044F\u0442\u043E\u0440\u043E\u043C."
   anchor: {fileID: 0}
+--- !u!114 &5853274722935355060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5853274722935355058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 4
+  _key: ToolTip_Controller_TB
+  _capitalize: 0
 --- !u!23 &5909427720861999782
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31356,6 +31500,7 @@ GameObject:
   - component: {fileID: 4619064133547781743}
   - component: {fileID: 2793728170365345816}
   - component: {fileID: 6524187724284730237}
+  - component: {fileID: 6524187724284730238}
   m_Layer: 0
   m_Name: "\u0418\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u044B"
   m_TagString: Untagged
@@ -31402,6 +31547,21 @@ MonoBehaviour:
   toolTipText: "\u0418\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u044B USB
     \u0438 \u0430\u043A\u043A\u0443\u043C\u0443\u043B\u044F\u0442\u043E\u0440."
   anchor: {fileID: 0}
+--- !u!114 &6524187724284730238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6524187724284730236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 4
+  _key: ToolTip_Controller_Interfaces
+  _capitalize: 0
 --- !u!1 &6532754380309871396
 GameObject:
   m_ObjectHideFlags: 0
@@ -31415,6 +31575,7 @@ GameObject:
   - component: {fileID: 5599898498477290779}
   - component: {fileID: 2793728171510658758}
   - component: {fileID: 6532754380309871397}
+  - component: {fileID: 6532754380309871398}
   m_Layer: 0
   m_Name: "\u041F\u0435\u0440\u0435\u043B\u0438\u0441\u0442\u044B\u0432\u0430\u043D\u0438\u0435
     \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u043E\u0432"
@@ -31464,6 +31625,21 @@ MonoBehaviour:
     \u043D\u0430 \u0434\u0438\u0441\u043F\u043B\u0435\u0435 \u0432\u0432\u0435\u0440\u0445
     \u0438\u043B\u0438 \u0432\u043D\u0438\u0437."
   anchor: {fileID: 0}
+--- !u!114 &6532754380309871398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6532754380309871396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 4
+  _key: ToolTip_Controller_UD
+  _capitalize: 0
 --- !u!4 &6537628134515931548
 Transform:
   m_ObjectHideFlags: 0
@@ -31634,6 +31810,7 @@ GameObject:
   - component: {fileID: 1384479311917124304}
   - component: {fileID: 2793728170924872612}
   - component: {fileID: 6891300487946668759}
+  - component: {fileID: 6891300487946668760}
   m_Layer: 0
   m_Name: "\u0421\u043C\u0435\u043D\u0430 \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u043C\u043E\u0433\u043E
     \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430"
@@ -31683,6 +31860,21 @@ MonoBehaviour:
     \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0435\u043C\u044B\u0435 \u043D\u0430
     \u043F\u0430\u043D\u0435\u043B\u0438 \u0434\u0438\u0441\u043F\u043B\u0435\u044F."
   anchor: {fileID: 0}
+--- !u!114 &6891300487946668760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891300487946668758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 4
+  _key: ToolTip_Controller_CD
+  _capitalize: 0
 --- !u!1 &6916178407071207905
 GameObject:
   m_ObjectHideFlags: 0
@@ -33090,6 +33282,7 @@ GameObject:
   - component: {fileID: 5214584620323893819}
   - component: {fileID: 2793728171168532929}
   - component: {fileID: 8014548408960563855}
+  - component: {fileID: 8014548408960563856}
   m_Layer: 0
   m_Name: Key 2
   m_TagString: Untagged
@@ -33142,6 +33335,21 @@ MonoBehaviour:
     \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u0439 \u0441 \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u043B\u0435\u0440\u0430
     \u0438\u043B\u0438 \u0434\u0440\u0443\u0433\u043E\u0433\u043E \u043E\u0431\u043E\u0440\u0443\u0434\u043E\u0432\u0430\u043D\u0438\u044F."
   anchor: {fileID: 0}
+--- !u!114 &8014548408960563856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014548408960563854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 4
+  _key: ToolTip_Controller_Key
+  _capitalize: 0
 --- !u!114 &8071209015268603984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33400,6 +33608,7 @@ GameObject:
   - component: {fileID: 7342540958087250096}
   - component: {fileID: 2793728170513652131}
   - component: {fileID: 8548101604029837369}
+  - component: {fileID: 8548101604029837370}
   m_Layer: 0
   m_Name: RS-232
   m_TagString: Untagged
@@ -33448,6 +33657,21 @@ MonoBehaviour:
     \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u043E\u0433\u043E
     \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u0430."
   anchor: {fileID: 0}
+--- !u!114 &8548101604029837370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8548101604029837368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 4
+  _key: ToolTip_Controller_RS232
+  _capitalize: 0
 --- !u!33 &8568453811888948403
 MeshFilter:
   m_ObjectHideFlags: 0
