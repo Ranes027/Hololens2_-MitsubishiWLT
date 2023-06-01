@@ -1958,6 +1958,7 @@ GameObject:
   - component: {fileID: 230479306}
   - component: {fileID: 230479308}
   - component: {fileID: 230479307}
+  - component: {fileID: 230479309}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2044,7 +2045,7 @@ MonoBehaviour:
   m_fontSize: 82
   m_fontSizeBase: 82
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 144
   m_fontStyle: 0
@@ -2091,6 +2092,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230479305}
   m_CullTransparentMesh: 1
+--- !u!114 &230479309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230479305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 0
+  _key: OperatorPanelInfoMenu_T1
+  _capitalize: 0
 --- !u!1 &230972525
 GameObject:
   m_ObjectHideFlags: 0
@@ -7404,6 +7420,7 @@ GameObject:
   - component: {fileID: 825840546}
   - component: {fileID: 825840545}
   - component: {fileID: 825840544}
+  - component: {fileID: 825840554}
   m_Layer: 0
   m_Name: CircullarButton(PilzInfo)
   m_TagString: Untagged
@@ -8054,6 +8071,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.032, y: 0.032, z: 0.016}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &825840554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825840542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 0
+  _key: AutomatedControlSystemInfoMenu_Pilz
+  _capitalize: 0
 --- !u!1 &826652313
 GameObject:
   m_ObjectHideFlags: 0
@@ -8947,6 +8979,7 @@ GameObject:
   - component: {fileID: 929532257}
   - component: {fileID: 929532259}
   - component: {fileID: 929532258}
+  - component: {fileID: 929532260}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -9021,12 +9054,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.04
+  m_fontSize: 0.03
   m_fontSizeBase: 0.04
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0.03
+  m_fontSizeMax: 0.05
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -9107,6 +9140,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &929532260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929532256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 1
+  _key: Pilz_Name
+  _capitalize: 0
 --- !u!1 &947579232
 GameObject:
   m_ObjectHideFlags: 0
@@ -11184,6 +11232,7 @@ GameObject:
   - component: {fileID: 1131306347}
   - component: {fileID: 1131306346}
   - component: {fileID: 1131306345}
+  - component: {fileID: 1131306356}
   m_Layer: 0
   m_Name: CircullarButton(FestoInfo)
   m_TagString: Untagged
@@ -11835,6 +11884,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0.0636, y: 0.0286}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1131306356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131306344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 0
+  _key: AutomatedControlSystemInfoMenu_Festo
+  _capitalize: 0
 --- !u!1 &1132019704
 GameObject:
   m_ObjectHideFlags: 0
@@ -13226,6 +13290,7 @@ GameObject:
   - component: {fileID: 1274893303}
   - component: {fileID: 1274893305}
   - component: {fileID: 1274893304}
+  - component: {fileID: 1274893306}
   m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
@@ -13308,9 +13373,9 @@ MonoBehaviour:
   m_fontSize: 82
   m_fontSizeBase: 82
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 144
+  m_fontSizeMax: 82
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -13355,6 +13420,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274893302}
   m_CullTransparentMesh: 1
+--- !u!114 &1274893306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274893302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 0
+  _key: AutomatedControlSystemInfoMenu_T2
+  _capitalize: 0
 --- !u!1 &1276243573
 GameObject:
   m_ObjectHideFlags: 0
@@ -14301,6 +14381,7 @@ GameObject:
   - component: {fileID: 1346595465}
   - component: {fileID: 1346595467}
   - component: {fileID: 1346595466}
+  - component: {fileID: 1346595468}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -14347,7 +14428,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0411\u041F Festo"
+  m_text: Festo power supply
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a84f857bec7e7345843ae29404c57ce, type: 2}
   m_sharedMaterial: {fileID: 21202819797275496, guid: 6a84f857bec7e7345843ae29404c57ce, type: 2}
@@ -14377,9 +14458,9 @@ MonoBehaviour:
   m_fontSize: 0.06
   m_fontSizeBase: 0.06
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0.01
+  m_fontSizeMax: 0.06
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -14389,7 +14470,7 @@ MonoBehaviour:
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
+  m_charWidthMaxAdj: 50
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
@@ -14460,6 +14541,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1346595468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346595464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 1
+  _key: FestoPB_Name
+  _capitalize: 0
 --- !u!1 &1346975527
 GameObject:
   m_ObjectHideFlags: 0
@@ -14479,6 +14575,7 @@ GameObject:
   - component: {fileID: 1346975537}
   - component: {fileID: 1346975528}
   - component: {fileID: 1346975536}
+  - component: {fileID: 1346975539}
   m_Layer: 0
   m_Name: FestoPB_Tip
   m_TagString: Untagged
@@ -14510,8 +14607,8 @@ MonoBehaviour:
     \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u0431\u043B\u043E\u043A
     \u043F\u0438\u0442\u0430\u043D\u0438\u044F FESTO SVG-1."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14561,7 +14658,7 @@ MonoBehaviour:
   checkPaddingRequired: 0
   m_isRichText: 1
   m_parseCtrlCharacters: 1
-  m_isOrthographic: 0
+  m_isOrthographic: 1
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -15152,6 +15249,21 @@ RectTransform:
   m_AnchoredPosition: {x: -0.1911, y: 0.0711}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1346975539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346975527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 0
+  _key: FestoPB_Tip
+  _capitalize: 0
 --- !u!1 &1350219844
 GameObject:
   m_ObjectHideFlags: 0
@@ -16814,6 +16926,7 @@ GameObject:
   - component: {fileID: 1553179070}
   - component: {fileID: 1553179072}
   - component: {fileID: 1553179071}
+  - component: {fileID: 1553179073}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -16894,9 +17007,9 @@ MonoBehaviour:
   m_fontSize: 82
   m_fontSizeBase: 82
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 144
+  m_fontSizeMax: 82
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -16941,6 +17054,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553179069}
   m_CullTransparentMesh: 1
+--- !u!114 &1553179073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553179069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 0
+  _key: AutomatedControlSystemInfoMenu_T1
+  _capitalize: 0
 --- !u!1 &1558871914
 GameObject:
   m_ObjectHideFlags: 0
@@ -18050,6 +18178,7 @@ GameObject:
   - component: {fileID: 1692237684}
   - component: {fileID: 1692237683}
   - component: {fileID: 1692237682}
+  - component: {fileID: 1692237685}
   m_Layer: 0
   m_Name: Pilz_Tip
   m_TagString: Untagged
@@ -18736,6 +18865,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692237673}
   m_CullTransparentMesh: 1
+--- !u!114 &1692237685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692237673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 0
+  _key: Pilz_Tip
+  _capitalize: 0
 --- !u!1 &1701702862
 GameObject:
   m_ObjectHideFlags: 0

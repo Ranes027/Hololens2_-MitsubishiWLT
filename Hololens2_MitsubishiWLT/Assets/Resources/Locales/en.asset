@@ -64,9 +64,43 @@ MonoBehaviour:
     Value: "For detailed information about the controller elements, click the \"Magnifier\"
       button and hover over the controller elements.\r"
   - Key: ControllerInfoMenu_InfoButton
-    Value: "Technical characteristics of the Mitsubishi CR-1 controller'/n' '/n'
-      Control Mode: PTP and CP Processor: 64-bit RISC + DSP Maximum number of programs:
-      88 Maximum number of program steps: 5000 Maximum number of training points:
-      2500 Built-in inputs/Outputs: 16 In/16 Out Safety Functions: Emergency switch
-      Power supply: 207 \u2013 253 V Power consumption: 0.7 kVA Operating temperature:
-      0 \u2013 40C Dimensions: 212 x 166 x 290 mm"
+    Value: "Technical characteristics of the Mitsubishi CR-1 controller \n Control
+      Mode: PTP and CP \n Processor: 64-bit RISC + DSP \n Maximum number of programs:
+      88 \n Maximum number of program steps: 5000 \n Maximum number of training points:
+      2500 \n Built-in inputs/Outputs: 16 In/16 Out \n Safety Functions: Emergency
+      switch \n Power supply: 207 \u2013 253 V \n Power consumption: 0.7 kVA \n Operating
+      temperature: 0 \u2013 40C \n Dimensions: 212 x 166 x 290 mm \n\r"
+  - Key: OperatorPanelInfoMenu_T1
+    Value: "Robot Vision Cell provides an optimal learning environment for robotics
+      and vision.\n This operator panel is used to launch the stand, detailed instructions
+      for interacting with which are presented in the main menu.\r"
+  - Key: AutomatedControlSystemInfoMenu_T1
+    Value: "The control level includes the Festo power supply and the Pilz safety
+      relay.\r"
+  - Key: AutomatedControlSystemInfoMenu_T2
+    Value: "To get detailed information about components, use the interaction interface
+      located next to the objects.\r"
+  - Key: AutomatedControlSystemInfoMenu_Festo
+    Value: "Technical characteristics of the FESTO SVG-1 power supply\n Rated input
+      voltage: 100 - 240 V\n Input voltage range: 85 - 264 V\n Rated output voltage:
+      24 V / \xB1 1%\n Output voltage setting range: 22.5 - 28.5V/n Rated output
+      current (-25\xB0C to +60\xB0C): 5 A (Bout = 24 V)\n Frequency: 45 - 65 Hz\n
+      Reduction of nominal characteristics (from +60 \xB0C): 2.5%\n Dimensions (W
+      x H x D): 55 x 130 x 125 mm \n\r"
+  - Key: AutomatedControlSystemInfoMenu_Pilz
+    Value: "Technical characteristics of the safety relay Pilz PNOZ X 8 P\n AC/DC
+      supply voltage: 24 V\n Rated insulation voltage: 250 V\n Rated withstand pulse
+      voltage: 4 kV\n Temperature Range: -10\xB0C to +55\xB0C\n Temperature range
+      using storage: -40\xB0C to +85\xB0C\n Frequency: 10 - 55 Hz\n Protection type:
+      IP 54\n Dimensions (W x H x D): 45 x 101 x 121 mm \n\r"
+  - Key: FestoPB_Name
+    Value: "Festo power supply\r"
+  - Key: FestoPB_Tip
+    Value: "The FESTO SVG-1 power supply is used to power the relay.\r"
+  - Key: Pilz_Name
+    Value: "Pilz Safety Relay\r"
+  - Key: Pilz_Tip
+    Value: Safety relays are necessary for the normal functioning of the automation
+      system, as they are currently an integral part of any industrial devices. The
+      principle of the safety relay is based on the impossibility of switching on
+      the power circuits of the equipment in case of various malfunctions.
