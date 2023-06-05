@@ -27,7 +27,11 @@ namespace MitsubishiAR.Model.Localization
         [ContextMenu("Update Locale")]
         public void LoadLocale()
         {
-            if (_request != null) return;
+            if (_request != null)
+            {
+                Debug.Log("Please, wait.");
+                return;
+            }
 
             _request = UnityWebRequest.Get(_url);
             _request.SendWebRequest().completed += OnDataLoaded;
