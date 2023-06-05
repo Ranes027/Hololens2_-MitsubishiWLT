@@ -1,4 +1,5 @@
 using MitsubishiAR.Model.Data;
+using MitsubishiAR.Model.Localization;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -28,7 +29,7 @@ namespace MitsubishiAR.UI.TextUtils
             _onComplete = onComplete;
             _onExit = onExit;
             _currentSentence = 0;
-            CurrentContent.Text.text = CurrentSentence.Value;
+            CurrentContent.Text.text = CurrentSentence.Value.Localize();
 
             _container.SetActive(true);
             CheckSentences();
@@ -40,7 +41,7 @@ namespace MitsubishiAR.UI.TextUtils
                 _currentSentence--;
             CheckSentences();
 
-            CurrentContent.Text.text = CurrentSentence.Value;
+            CurrentContent.Text.text = CurrentSentence.Value.Localize();
         }
 
         public void OnContinue()
@@ -48,7 +49,7 @@ namespace MitsubishiAR.UI.TextUtils
             _currentSentence++;
             CheckSentences();
 
-            CurrentContent.Text.text = CurrentSentence.Value;
+            CurrentContent.Text.text = CurrentSentence.Value.Localize();
         }
 
         public void OnExit()
