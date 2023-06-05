@@ -137,5 +137,21 @@ MonoBehaviour:
   - Key: ToolTip_Controller_Start
     Value: "\"START\" button: used to start the robot control program.\r"
   - Key: ToolTip_Controller_Stop
-    Value: '"STOP" button: stops the program execution, the robot servo does not
-      turn off.'
+    Value: "\"STOP\" button: stops the program execution, the robot servo does not
+      turn off.\r"
+  - Key: StandInstructionInfoWindow_BackButton
+    Value: "Back\r"
+  - Key: StandInstructionInfoWindow_NextButton
+    Value: "Continue\r"
+  - Key: StandInstructionInfoWindow_ExitButton
+    Value: "Exit\r"
+  - Key: StandTurnOnInstruction_V1
+    Value: "In this window, the steps necessary to execute the selected instruction
+      will be presented. For clarity, also pay attention to the virtual hints next
+      to the objects with which you need to interact.\r"
+  - Key: StandTurnOnInstruction_V2
+    Value: "Turn on the power of the stand.\r"
+  - Key: StandTurnOnInstruction_V3
+    Value: "Launch the stand.\r"
+  - Key: StandTurnOffInstruction_V1
+    Value: To turn off the robot arm in an emergency, use the "Emergency Stop" button.
