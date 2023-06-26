@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Mining University
-  productName: Mitsubishi-Complex_AR-instruction
+  productName: MitsubishiAR_InstructionWithWLT
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -138,7 +138,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.3.1
+  bundleVersion: 1.2.7.0
   preloadedAssets:
   - {fileID: 0}
   - {fileID: 0}
@@ -276,7 +276,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 29b5bdd17b4088641a55afd624f95aad, type: 3}
+      m_Icon: {fileID: 2800000, guid: c2bba925fa5182f4780dc0c94c4eb526, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -626,21 +626,31 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Template3D
-  metroPackageVersion: 1.1.0.0
+  metroPackageName: HololensApp
+  metroPackageVersion: 1.2.7.0
   metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: '>;=='
   metroCertificateSubject: Mining University
   metroCertificateIssuer: Mining University
   metroCertificateNotAfter: 00edbadc125ada01
-  metroApplicationDescription: Template_3D
+  metroApplicationDescription: AR Instruction for Mitsubishi stand
   wsaImages:
-    65636: Assets/Textures/Icons/AppIcon/[50x50]ATPP_Logo.png
-    65661: Assets/Textures/Icons/AppIcon/[63x63]ATPP_Logo.png
-    65686: Assets/Textures/Icons/AppIcon/[75x75]ATPP_Logo.png
-    65736: Assets/Textures/Icons/AppIcon/[100x100]ATPP_Logo.png
-    65936: Assets/Textures/Icons/AppIcon/[200x200]ATPP_Logo.png
-  metroTileShortName: MitsubishiAR
+    65636: Assets/UI/AppLogo/[50x50] M_WLT_Logo.png
+    65661: Assets/UI/AppLogo/[63x63] M_WLT_Logo.png
+    65686: Assets/UI/AppLogo/[75x75] M_WLT_Logo.png
+    65736: Assets/UI/AppLogo/[100x100] M_WLT_Logo.png
+    65936: Assets/UI/AppLogo/M_WLT_Logo.png
+    131272: Assets/UI/LoadScreen/[1240x600] Mining_University_Logo.png
+    2031640: Assets/UI/AppLogo/TilesAndLogos/[24x24] M_WLT_Logo.png
+    2031716: Assets/UI/AppLogo/TilesAndLogos/[44x44] M_WLT_Logo.png
+    2031816: Assets/UI/AppLogo/TilesAndLogos/[88x88] M_WLT_Logo.png
+    2097252: Assets/UI/AppLogo/TilesAndLogos/[71x71] M_WLT_Logo.png
+    2097352: Assets/UI/AppLogo/TilesAndLogos/[142x142] M_WLT_Logo.png
+    2162788: Assets/UI/AppLogo/TilesAndLogos/[150x150] M_WLT_Logo.png
+    2162888: Assets/UI/AppLogo/TilesAndLogos/[300x300] M_WLT_Logo.png
+    2293860: Assets/UI/AppLogo/TilesAndLogos/[310x150] M_WLT_Logo.png
+    2293960: Assets/UI/AppLogo/TilesAndLogos/[620x300] M_WLT_Logo.png
+  metroTileShortName: MitsubishiAR-WLT
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
