@@ -4231,8 +4231,11 @@ GameObject:
   m_Component:
   - component: {fileID: 452704508}
   - component: {fileID: 452704510}
-  - component: {fileID: 452704509}
   - component: {fileID: 452704511}
+  - component: {fileID: 452704513}
+  - component: {fileID: 452704512}
+  - component: {fileID: 452704509}
+  - component: {fileID: 452704514}
   m_Layer: 0
   m_Name: CR-1D Controller
   m_TagString: Untagged
@@ -4265,13 +4268,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 452704507}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b54ea26464070b499d1c6f072d7c6a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelPositionSource: 0
-  orienter: {fileID: 0}
-  prefab_FeelerRay: {fileID: 0}
-  allowRotation: 1
+  ShowTetherWhenManipulating: 0
+  IsBoundsHandles: 0
 --- !u!65 &452704510
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4381,6 +4382,114 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &452704512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452704507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 0}
+  boundsOverride: {fileID: 0}
+  boundsCalculationMethod: 0
+  activation: 0
+  flattenAxis: 0
+  uniformScaleOnFlattenedAxis: 1
+  boxPadding: {x: 0, y: 0, z: 0}
+  boxDisplayConfiguration: {fileID: 0}
+  linksConfiguration: {fileID: 0}
+  scaleHandlesConfiguration: {fileID: 0}
+  rotationHandlesConfiguration: {fileID: 0}
+  translationHandlesConfiguration: {fileID: 0}
+  handleProximityEffectConfiguration: {fileID: 0}
+  hideElementsInInspector: 1
+  smoothingActive: 0
+  rotateLerpTime: 0.001
+  scaleLerpTime: 0.001
+  translateLerpTime: 0.001
+  enableConstraints: 1
+  constraintsManager: {fileID: 0}
+  rotateStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  rotateStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  scaleStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  scaleStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  translateStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  translateStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  elasticsManager: {fileID: 0}
+--- !u!114 &452704513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452704507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoConstraintSelection: 1
+  selectedConstraints: []
+--- !u!114 &452704514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452704507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hostTransform: {fileID: 452704508}
+  manipulationType: 3
+  twoHandedManipulationType: 7
+  allowFarManipulation: 1
+  useForcesForNearManipulation: 0
+  oneHandRotationModeNear: 1
+  oneHandRotationModeFar: 1
+  releaseBehavior: 3
+  transformSmoothingLogicType:
+    reference: Microsoft.MixedReality.Toolkit.Utilities.DefaultTransformSmoothingLogic,
+      Microsoft.MixedReality.Toolkit.SDK
+  smoothingFar: 1
+  smoothingNear: 1
+  moveLerpTime: 0.001
+  rotateLerpTime: 0.001
+  scaleLerpTime: 0.001
+  enableConstraints: 1
+  constraintsManager: {fileID: 452704513}
+  elasticsManager: {fileID: 0}
+  onManipulationStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onManipulationEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &466186329
 GameObject:
   m_ObjectHideFlags: 0
@@ -5737,8 +5846,11 @@ GameObject:
   m_Component:
   - component: {fileID: 563362013}
   - component: {fileID: 563362015}
-  - component: {fileID: 563362014}
   - component: {fileID: 563362016}
+  - component: {fileID: 563362018}
+  - component: {fileID: 563362017}
+  - component: {fileID: 563362014}
+  - component: {fileID: 563362019}
   m_Layer: 0
   m_Name: Operator_panel
   m_TagString: Untagged
@@ -5772,13 +5884,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 563362012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b54ea26464070b499d1c6f072d7c6a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelPositionSource: 0
-  orienter: {fileID: 0}
-  prefab_FeelerRay: {fileID: 0}
-  allowRotation: 1
+  ShowTetherWhenManipulating: 0
+  IsBoundsHandles: 0
 --- !u!65 &563362015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5888,6 +5998,114 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &563362017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563362012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 0}
+  boundsOverride: {fileID: 0}
+  boundsCalculationMethod: 0
+  activation: 0
+  flattenAxis: 0
+  uniformScaleOnFlattenedAxis: 1
+  boxPadding: {x: 0, y: 0, z: 0}
+  boxDisplayConfiguration: {fileID: 0}
+  linksConfiguration: {fileID: 0}
+  scaleHandlesConfiguration: {fileID: 0}
+  rotationHandlesConfiguration: {fileID: 0}
+  translationHandlesConfiguration: {fileID: 0}
+  handleProximityEffectConfiguration: {fileID: 0}
+  hideElementsInInspector: 1
+  smoothingActive: 0
+  rotateLerpTime: 0.001
+  scaleLerpTime: 0.001
+  translateLerpTime: 0.001
+  enableConstraints: 1
+  constraintsManager: {fileID: 0}
+  rotateStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  rotateStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  scaleStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  scaleStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  translateStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  translateStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  elasticsManager: {fileID: 0}
+--- !u!114 &563362018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563362012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoConstraintSelection: 1
+  selectedConstraints: []
+--- !u!114 &563362019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563362012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hostTransform: {fileID: 563362013}
+  manipulationType: 3
+  twoHandedManipulationType: 7
+  allowFarManipulation: 1
+  useForcesForNearManipulation: 0
+  oneHandRotationModeNear: 1
+  oneHandRotationModeFar: 1
+  releaseBehavior: 3
+  transformSmoothingLogicType:
+    reference: Microsoft.MixedReality.Toolkit.Utilities.DefaultTransformSmoothingLogic,
+      Microsoft.MixedReality.Toolkit.SDK
+  smoothingFar: 1
+  smoothingNear: 1
+  moveLerpTime: 0.001
+  rotateLerpTime: 0.001
+  scaleLerpTime: 0.001
+  enableConstraints: 1
+  constraintsManager: {fileID: 563362018}
+  elasticsManager: {fileID: 0}
+  onManipulationStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onManipulationEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &564810161
 GameObject:
   m_ObjectHideFlags: 0
@@ -6695,7 +6913,7 @@ Transform:
   - {fileID: 563362013}
   - {fileID: 1411507361}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &677129761
 MonoBehaviour:
@@ -9242,7 +9460,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &966781213 stripped
 MonoBehaviour:
@@ -10572,8 +10790,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1056447740}
   - component: {fileID: 1056447743}
-  - component: {fileID: 1056447742}
   - component: {fileID: 1056447741}
+  - component: {fileID: 1056447745}
+  - component: {fileID: 1056447744}
+  - component: {fileID: 1056447742}
+  - component: {fileID: 1056447746}
   m_Layer: 0
   m_Name: Safety_carcass
   m_TagString: Untagged
@@ -10703,13 +10924,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1056447739}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b54ea26464070b499d1c6f072d7c6a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelPositionSource: 0
-  orienter: {fileID: 0}
-  prefab_FeelerRay: {fileID: 0}
-  allowRotation: 1
+  ShowTetherWhenManipulating: 0
+  IsBoundsHandles: 0
 --- !u!65 &1056447743
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10723,6 +10942,114 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.42535233, y: 0.2831047, z: 0.30848753}
   m_Center: {x: 0.08309883, y: 0.13526483, z: 0.0011723638}
+--- !u!114 &1056447744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056447739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 0}
+  boundsOverride: {fileID: 0}
+  boundsCalculationMethod: 0
+  activation: 0
+  flattenAxis: 0
+  uniformScaleOnFlattenedAxis: 1
+  boxPadding: {x: 0, y: 0, z: 0}
+  boxDisplayConfiguration: {fileID: 0}
+  linksConfiguration: {fileID: 0}
+  scaleHandlesConfiguration: {fileID: 0}
+  rotationHandlesConfiguration: {fileID: 0}
+  translationHandlesConfiguration: {fileID: 0}
+  handleProximityEffectConfiguration: {fileID: 0}
+  hideElementsInInspector: 1
+  smoothingActive: 0
+  rotateLerpTime: 0.001
+  scaleLerpTime: 0.001
+  translateLerpTime: 0.001
+  enableConstraints: 1
+  constraintsManager: {fileID: 0}
+  rotateStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  rotateStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  scaleStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  scaleStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  translateStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  translateStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  elasticsManager: {fileID: 0}
+--- !u!114 &1056447745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056447739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoConstraintSelection: 1
+  selectedConstraints: []
+--- !u!114 &1056447746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056447739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hostTransform: {fileID: 1056447740}
+  manipulationType: 3
+  twoHandedManipulationType: 7
+  allowFarManipulation: 1
+  useForcesForNearManipulation: 0
+  oneHandRotationModeNear: 1
+  oneHandRotationModeFar: 1
+  releaseBehavior: 3
+  transformSmoothingLogicType:
+    reference: Microsoft.MixedReality.Toolkit.Utilities.DefaultTransformSmoothingLogic,
+      Microsoft.MixedReality.Toolkit.SDK
+  smoothingFar: 1
+  smoothingNear: 1
+  moveLerpTime: 0.001
+  rotateLerpTime: 0.001
+  scaleLerpTime: 0.001
+  enableConstraints: 1
+  constraintsManager: {fileID: 1056447745}
+  elasticsManager: {fileID: 0}
+  onManipulationStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onManipulationEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1062867573
 GameObject:
   m_ObjectHideFlags: 0
@@ -11940,7 +12267,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1144335065
 GameObject:
@@ -13070,7 +13397,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1237946228
 GameObject:
@@ -15655,8 +15982,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1411507361}
   - component: {fileID: 1411507364}
-  - component: {fileID: 1411507363}
   - component: {fileID: 1411507362}
+  - component: {fileID: 1411507366}
+  - component: {fileID: 1411507365}
+  - component: {fileID: 1411507363}
+  - component: {fileID: 1411507367}
   m_Layer: 0
   m_Name: Automated control system
   m_TagString: Untagged
@@ -15785,13 +16115,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1411507360}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b54ea26464070b499d1c6f072d7c6a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelPositionSource: 0
-  orienter: {fileID: 0}
-  prefab_FeelerRay: {fileID: 0}
-  allowRotation: 1
+  ShowTetherWhenManipulating: 0
+  IsBoundsHandles: 0
 --- !u!65 &1411507364
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15805,6 +16133,114 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.18932025, y: 0.12410653, z: 0.032321934}
   m_Center: {x: 0.008708335, y: -0.02869954, z: -0.0001728516}
+--- !u!114 &1411507365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411507360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 0}
+  boundsOverride: {fileID: 0}
+  boundsCalculationMethod: 0
+  activation: 0
+  flattenAxis: 0
+  uniformScaleOnFlattenedAxis: 1
+  boxPadding: {x: 0, y: 0, z: 0}
+  boxDisplayConfiguration: {fileID: 0}
+  linksConfiguration: {fileID: 0}
+  scaleHandlesConfiguration: {fileID: 0}
+  rotationHandlesConfiguration: {fileID: 0}
+  translationHandlesConfiguration: {fileID: 0}
+  handleProximityEffectConfiguration: {fileID: 0}
+  hideElementsInInspector: 1
+  smoothingActive: 0
+  rotateLerpTime: 0.001
+  scaleLerpTime: 0.001
+  translateLerpTime: 0.001
+  enableConstraints: 1
+  constraintsManager: {fileID: 0}
+  rotateStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  rotateStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  scaleStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  scaleStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  translateStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  translateStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  elasticsManager: {fileID: 0}
+--- !u!114 &1411507366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411507360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoConstraintSelection: 1
+  selectedConstraints: []
+--- !u!114 &1411507367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411507360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hostTransform: {fileID: 0}
+  manipulationType: 3
+  twoHandedManipulationType: 7
+  allowFarManipulation: 1
+  useForcesForNearManipulation: 0
+  oneHandRotationModeNear: 1
+  oneHandRotationModeFar: 1
+  releaseBehavior: 3
+  transformSmoothingLogicType:
+    reference: Microsoft.MixedReality.Toolkit.Utilities.DefaultTransformSmoothingLogic,
+      Microsoft.MixedReality.Toolkit.SDK
+  smoothingFar: 1
+  smoothingNear: 1
+  moveLerpTime: 0.001
+  rotateLerpTime: 0.001
+  scaleLerpTime: 0.001
+  enableConstraints: 1
+  constraintsManager: {fileID: 452704513}
+  elasticsManager: {fileID: 0}
+  onManipulationStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onManipulationEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1417352240
 GameObject:
   m_ObjectHideFlags: 0
@@ -17292,7 +17728,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1562569136
 GameObject:
@@ -19165,7 +19601,7 @@ Transform:
   - {fileID: 230412733}
   - {fileID: 24008175}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1736930973
 GameObject:
@@ -20199,7 +20635,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1756763943
 GameObject:
@@ -20231,6 +20667,51 @@ Transform:
   - {fileID: 1403550893}
   m_Father: {fileID: 1692237674}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1757703430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1757703432}
+  - component: {fileID: 1757703431}
+  m_Layer: 0
+  m_Name: AchorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1757703431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757703430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025de2b0c1a2d624797e19a6af8dcd78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldAnchorObject: {fileID: 0}
+  targetObject: {fileID: 0}
+--- !u!4 &1757703432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757703430}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.034340993, y: 0.010682881, z: 0.49542713}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1766243345
 GameObject:
@@ -23591,7 +24072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7658754944271795560, guid: 891f4188ad92c794c94ff15a853c4f2d, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7658754944271795560, guid: 891f4188ad92c794c94ff15a853c4f2d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24995,7 +25476,7 @@ PrefabInstance:
       objectReference: {fileID: 324660083879608239}
     - target: {fileID: 3167587115960793040, guid: 727f7313cc4922e4eb5a8e2625283fa3, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3167587115960793040, guid: 727f7313cc4922e4eb5a8e2625283fa3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25959,7 +26440,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1893220994321610522, guid: bc26cf9facb18994f99424584245333b, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1893220994321610522, guid: bc26cf9facb18994f99424584245333b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26328,7 +26809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2317170037493834136, guid: 071f3fba46a0a4840b0e8a44fb198c54, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2317170037493834136, guid: 071f3fba46a0a4840b0e8a44fb198c54, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29343,7 +29824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2406182595746169460, guid: 95d86d0e53c7a854482de3e8336b6655, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2406182595746169460, guid: 95d86d0e53c7a854482de3e8336b6655, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30877,7 +31358,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2501338860373115183, guid: 60ee2d4ecc4607f44a95941ce498a976, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2501338860373115183, guid: 60ee2d4ecc4607f44a95941ce498a976, type: 3}
       propertyPath: m_LocalPosition.x
